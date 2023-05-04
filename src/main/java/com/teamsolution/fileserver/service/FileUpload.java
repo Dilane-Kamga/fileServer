@@ -1,2 +1,10 @@
-package com.teamsolution.fileserver.service;public interface FileUpload {
+package com.teamsolution.fileserver.service;
+
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+
+public interface FileUpload {
+
+    String uploadFile(MultipartFile file) throws IOException;
 }
